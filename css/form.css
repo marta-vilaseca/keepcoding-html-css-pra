@@ -1,0 +1,142 @@
+.contact {
+  /* background-color: #e0aa76; */
+  padding: 2rem;
+  font: 1.5rem/2.5rem "Merriweather", serif;
+  color: #2b1805;
+  background: linear-gradient(180deg, rgba(112, 76, 40, 0.3) 0%, rgba(112, 76, 40, 0) 1rem);
+}
+
+.form__element {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__element label,
+fieldset.form__element legend {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.form__element input[type="text"],
+.form__element input[type="tel"],
+.form__element textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid saddlebrown;
+  height: 3rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  color: #2b1805;
+}
+
+.form__element input[type="text"]:focus,
+.form__element input[type="tel"]:focus,
+.form__element textarea:focus {
+  background-color: rgba(205, 133, 63, 0.5);
+}
+
+.form__element input[type="text"]::placeholder,
+.form__element input[type="tel"]::placeholder,
+.form__element textarea::placeholder {
+  color: saddlebrown;
+}
+
+.form__element textarea {
+  min-height: 9rem;
+  overflow: hidden;
+  resize: both;
+}
+
+fieldset.form__element {
+  border: none;
+  padding: 4rem 1.5rem 1.5rem;
+  background-color: rgba(205, 133, 63, 0.5);
+  position: relative;
+  border-radius: 1rem;
+}
+
+fieldset.form__element legend {
+  position: absolute;
+  top: 1.5rem;
+}
+
+.form__element__options-list {
+  list-style-type: none;
+}
+
+.form__element__options-list li {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  line-height: 3rem;
+  gap: 1rem;
+}
+
+fieldset.form__element label {
+  font-style: normal;
+}
+
+.form__element input[type="radio"] {
+  width: 2rem;
+  height: 2rem;
+}
+
+.form__element--checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+.form__element--checkbox input[type="checkbox"] {
+  width: 2rem;
+  height: 2rem;
+}
+
+.form__buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.form__buttons input {
+  width: 48%;
+  height: 4rem;
+  background-color: saddlebrown;
+  border: none;
+  border-radius: 1rem;
+  font: 1.5rem/4rem "Merriweather", serif;
+  color: snow;
+  font-weight: bold;
+}
+
+/* https://community.gravityforms.com/t/remove-placeholder-text-when-the-field-is-clicked-resolved/12016 */
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+  opacity: 0;
+}
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+  color: transparent;
+  opacity: 0;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: transparent;
+  opacity: 0;
+}
+
+.contact h2 {
+  color: saddlebrown;
+}
+
+.contact h2::before,
+.contact h2::after {
+  color: #c58659;
+}

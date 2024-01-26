@@ -8,45 +8,65 @@
     <link href="./assets/fontawesome/css/brands.css" rel="stylesheet" />
     <link href="./assets/fontawesome/css/solid.css" rel="stylesheet" />
     <link href="./css/reset.css" rel="stylesheet" />
-    <link href="./css/style.css" rel="stylesheet" />
+    <link href="./css/common.css" rel="stylesheet" />
+    <link href="./css/header.css" rel="stylesheet" />
+    <link href="./css/about-banner.css" rel="stylesheet" />
+    <link href="./css/skills.css" rel="stylesheet" />
+    <link href="./css/form.css" rel="stylesheet" />
+    <link href="./css/footer.css" rel="stylesheet" />
   </head>
   <body>
     <header>
-      <h1 class="logo">Bilbo Baggins</h1>
-      <span class="nav__icon"><i class="fa-solid fa-bars"></i></span>
-      <nav class="nav">
-        <ul class="nav__menu">
-          <li>Home</li>
-          <li><a href="./index.html#about">About</a></li>
-          <li><a href="./index.html#skills">Skills</a></li>
-          <li><a href="./index.html#contact">Contact</a></li>
-          <li><a href="./projects.html">Projects</a></li>
-        </ul>
-      </nav>
+      <h1 class="logo"><a href="#home">Bilbo Baggins</a></h1>
+      <div id="menuToggle">
+        <input type="checkbox" />
+        <span class="nav__icon">
+          <!-- <i class="fa-solid fa-bars"></i> -->
+        </span>
+        <nav class="nav">
+          <ul class="nav__menu">
+            <li><a href="./index.html#about">About</a></li>
+            <li><a href="./index.html#skills">Skills</a></li>
+            <li><a href="./index.html#contact">Contact</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main>
+    <main id="home">
       <section id="about" class="about">
         <img class="about__image" src="./assets/img/bilbo-profile.jpg" alt="Bilbo Baggins profile picture" />
         <div class="about__text">
-          <p><strong>Bilbo Baggins</strong> is a Hobbit of <strong>the Shire</strong>, the main protagonist of <em>The Hobbit</em> and a secondary character in <em>The Lord of the Rings</em>.</p>
           <p>
-            The wizard <strong>Gandalf</strong> suggested to <strong>Thorin Oakenshield</strong> and his Company of Dwarves that they hire Bilbo Baggins to be their burglar in the
-            <em>Quest of Erebor</em>, and they all later fought together in the <em>Battle of the Five Armies</em>.
+            My name is <strong>Bilbo Baggins</strong> and I'm a Hobbit of <strong>the Shire</strong>. You may know me from my adventures as featured on <em>The Hobbit</em>, or also from my brief but
+            significant role in <em>The Lord of the Rings</em> trilogy.
           </p>
           <p>
-            Bilbo was also one of the bearers of <strong>the One Ring</strong>, and the first to voluntarily give it up, although with some difficulty. He wrote many of his adventures in a book he
+            The wizard <strong>Gandalf</strong> suggested to <strong>Thorin Oakenshield</strong> and his Company of Dwarves that they hired me to be their burglar in the <em>Quest of Erebor</em>, and
+            we all later fought together in the <em>Battle of the Five Armies</em>.
+          </p>
+          <p>
+            I was also one of the bearers of <strong>the One Ring</strong>, and the first to voluntarily give it up, although with some difficulty. I wrote about many of my adventures in a book I
             called <em>There and Back Again</em>.
           </p>
-          <p>Bilbo adopted his second-cousin-once-removed <strong>Frodo Baggins</strong> to be his heir after his parents, Drogo and Primula, died in an accident.</p>
-          <p>He is the first hobbit to become famous in the world at large, and one of the few to set foot in the <em>Undying Lands</em>.</p>
+          <p>I live with my second-cousin-once-removed <strong>Frodo Baggins</strong>, whom I adopted to be my heir after his parents, Drogo and Primula, passed away in an accident some time ago.</p>
+          <p>I'm the first hobbit to become famous in the world at large, and one of the few to set foot in the <em>Undying Lands</em>.</p>
         </div>
       </section>
+
       <aside class="banner">
-        <img src="./assets/img/hobbiton-day-alt.jpg" alt="" />
+        <!-- <img src="./assets/img/hobbiton-day-alt.jpg" alt="" /> -->
+        <picture>
+          <source srcset="./assets/img/hobbiton-day-alt_520.jpg" media="(width < 520px)" />
+          <source srcset="./assets/img/hobbiton-day-alt_768.jpg" media="(width < 768px)" />
+          <img src="./assets/img/hobbiton-day-alt.jpg" />
+        </picture>
         <blockquote>“It's a dangerous business, Frodo, going out your door. You step onto the road, and if you don't keep your feet, there's no knowing where you might be swept off to.”</blockquote>
       </aside>
+
       <section id="skills" class="skills">
+        <h2>My skills</h2>
         <ul>
           <li class="skills__list-item">
             <span class="skills__label">intelligence</span>
@@ -75,7 +95,7 @@
           <li class="skills__list-item">
             <span class="skills__label">sense of adventure</span>
             <div class="skills__container">
-              <div class="skills__skillbar w-70">70%</div>
+              <div class="skills__skillbar w-70">60%</div>
             </div>
           </li>
           <li class="skills__list-item">
@@ -122,20 +142,22 @@
           </li>
         </ul>
       </section>
+
       <section id="contact" class="contact">
+        <h2>Contact me</h2>
         <form method="post" action="">
           <div class="form__element">
-            <label for="firstname">First name</label>
+            <label for="firstname">First name *</label>
             <input name="firstname" type="text" id="firstname" placeholder="Your name" required />
           </div>
 
           <div class="form__element">
-            <label for="lastname">Last name</label>
+            <label for="lastname">Last name *</label>
             <input name="lastname" type="text" id="lastname" placeholder="Your last name" required />
           </div>
 
           <div class="form__element">
-            <label for="phone">Phone number</label>
+            <label for="phone">Phone number *</label>
             <input type="tel" id="phone" name="phone" required placeholder="111-123-4567" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format 111-123-4567" />
           </div>
 
@@ -162,18 +184,22 @@
           </fieldset>
 
           <div class="form__element">
-            <label for="githubUser">Github user tag</label>
+            <label for="githubUser">Github user tag *</label>
             <input type="text" id="githubUser" name="githubUser" required placeholder="@username" pattern="^@[^\s]+" title="Format @username" />
           </div>
 
           <div class="form__element">
-            <label for="message">Your message:</label>
-            <textarea name="message" id="message" placeholder="“Don’t adventures ever have an end? I suppose not. Someone else always has to carry on the story.”" required></textarea>
+            <label for="message">Your message *</label>
+            <textarea name="message" id="message" placeholder="“Don't adventures ever have an end? I suppose not. Someone else always has to carry on the story.”" required></textarea>
           </div>
 
           <div class="form__element form__element--checkbox">
             <label for="newsletter">Subscribe to the newsletter?</label>
             <input type="checkbox" name="newsletter" id="newsletter" value="selected" checked />
+          </div>
+
+          <div class="form__element form__note">
+            <em>* Required fields</em>
           </div>
 
           <div class="form__buttons">
@@ -187,16 +213,16 @@
     <footer>
       <ul class="social__links">
         <li>
-          <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.facebook.com/Hobbitontours" target="_blank"><i class="fa-brands fa-facebook"></i></a>
         </li>
         <li>
-          <a href="#" target="_blank"> <i class="fa-brands fa-square-twitter"></i></a>
+          <a href="https://twitter.com/hobbitontours" target="_blank"> <i class="fa-brands fa-square-twitter"></i></a>
         </li>
         <li>
-          <a href="http://" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.instagram.com/hobbitontours" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         </li>
         <li>
-          <a href="http://" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.youtube.com/thehobbit" target="_blank"><i class="fa-brands fa-youtube"></i></a>
         </li>
       </ul>
     </footer>

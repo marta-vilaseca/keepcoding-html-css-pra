@@ -1,0 +1,20 @@
+footer {
+  background-color: #2b1805;
+  margin-top: -2rem;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social__links {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+  font-size: 3rem;
+}
+
+.social__links a {
+  color: goldenrod;
+  text-decoration: none;
+}
