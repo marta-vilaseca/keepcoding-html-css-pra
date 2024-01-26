@@ -43,13 +43,144 @@
         </div>
       </section>
       <aside class="banner">
-        <!-- BANNER -->
+        <img src="./assets/img/hobbiton-day-alt.jpg" alt="" />
+        <blockquote>“It's a dangerous business, Frodo, going out your door. You step onto the road, and if you don't keep your feet, there's no knowing where you might be swept off to.”</blockquote>
       </aside>
       <section id="skills" class="skills">
-        <!-- SKILLS -->
+        <ul>
+          <li class="skills__list-item">
+            <span class="skills__label">intelligence</span>
+            <div class="skills__container">
+              <div class="skills__skillbar w-100">100%</div>
+            </div>
+          </li>
+          <li class="skills__list-item">
+            <span class="skills__label">cunningness</span>
+            <div class="skills__container">
+              <div class="skills__skillbar w-90">90%</div>
+            </div>
+          </li>
+          <li class="skills__list-item">
+            <span class="skills__label">stealth</span>
+            <div class="skills__container">
+              <div class="skills__skillbar w-90">90%</div>
+            </div>
+          </li>
+          <li class="skills__list-item">
+            <span class="skills__label">courage</span>
+            <div class="skills__container">
+              <div class="skills__skillbar w-90">90%</div>
+            </div>
+          </li>
+          <li class="skills__list-item">
+            <span class="skills__label">sense of adventure</span>
+            <div class="skills__container">
+              <div class="skills__skillbar w-70">70%</div>
+            </div>
+          </li>
+          <li class="skills__list-item">
+            <span class="skills__label">sword handling</span>
+            <div class="skills__container">
+              <div class="skills__skillbar w-50">50%</div>
+            </div>
+          </li>
+          <li class="skills__list-item">
+            <span class="skills__label">outsmarting dragons</span>
+            <div class="skills__container">
+              <div class="skills__skillbar w-100">100%</div>
+            </div>
+          </li>
+          <li class="skills__list-item">
+            <span class="skills__label">friendliness</span>
+            <div class="skills__container">
+              <div class="skills__skillbar w-80">80%</div>
+            </div>
+          </li>
+          <li class="skills__list-item">
+            <span class="skills__label">diplomacy</span>
+            <div class="skills__container">
+              <div class="skills__skillbar w-70">70%</div>
+            </div>
+          </li>
+          <li class="skills__list-item">
+            <span class="skills__label">public speaking</span>
+            <div class="skills__container">
+              <div class="skills__skillbar w-80">80%</div>
+            </div>
+          </li>
+          <li class="skills__list-item">
+            <span class="skills__label">storytelling</span>
+            <div class="skills__container">
+              <div class="skills__skillbar w-90">90%</div>
+            </div>
+          </li>
+          <li class="skills__list-item">
+            <span class="skills__label">documenting</span>
+            <div class="skills__container">
+              <div class="skills__skillbar w-80">80%</div>
+            </div>
+          </li>
+        </ul>
       </section>
       <section id="contact" class="contact">
-        <!-- FORM -->
+        <form method="post" action="">
+          <div class="form__element">
+            <label for="firstname">First name</label>
+            <input name="firstname" type="text" id="firstname" placeholder="Your name" required />
+          </div>
+
+          <div class="form__element">
+            <label for="lastname">Last name</label>
+            <input name="lastname" type="text" id="lastname" placeholder="Your last name" required />
+          </div>
+
+          <div class="form__element">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" required placeholder="111-123-4567" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format 111-123-4567" />
+          </div>
+
+          <fieldset class="form__element">
+            <legend>How did you meet me?</legend>
+            <ul class="form__element__options-list">
+              <li>
+                <label for="university">University</label>
+                <input type="radio" id="university" name="whereDidWeMeet" value="university" checked />
+              </li>
+              <li>
+                <label for="keepcoding">Keepcoding kick-off</label>
+                <input type="radio" id="keepcoding" name="whereDidWeMeet" value="keepcoding" />
+              </li>
+              <li>
+                <label for="school">School</label>
+                <input type="radio" id="school" name="whereDidWeMeet" value="school" />
+              </li>
+              <li>
+                <label for="github">on Github</label>
+                <input type="radio" id="github" name="whereDidWeMeet" value="github" />
+              </li>
+            </ul>
+          </fieldset>
+
+          <div class="form__element">
+            <label for="githubUser">Github user tag</label>
+            <input type="text" id="githubUser" name="githubUser" required placeholder="@username" pattern="^@[^\s]+" title="Format @username" />
+          </div>
+
+          <div class="form__element">
+            <label for="message">Your message:</label>
+            <textarea name="message" id="message" placeholder="“Don’t adventures ever have an end? I suppose not. Someone else always has to carry on the story.”" required></textarea>
+          </div>
+
+          <div class="form__element form__element--checkbox">
+            <label for="newsletter">Subscribe to the newsletter?</label>
+            <input type="checkbox" name="newsletter" id="newsletter" value="selected" checked />
+          </div>
+
+          <div class="form__buttons">
+            <input class="btn btn--secondary" type="reset" value="Reset form" />
+            <input class="btn" type="submit" value="Submit" />
+          </div>
+        </form>
       </section>
     </main>
 
