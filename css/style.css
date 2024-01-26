@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: "Merriweather", serif;
+  background: url("../assets/img/1.jpg") top center repeat scroll;
+}
+
+header {
+  background-color: #2b1805;
+  /* background-color: #224314; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: goldenrod;
+  padding: 1rem;
+}
+
+.nav {
+  display: none;
+}
+
+.logo {
+  background: url("../assets/img/hobbit-door.png") center left no-repeat;
+  background-size: contain;
+  height: 4rem;
+  padding-left: 5rem;
+  font-size: 2rem;
+  line-height: 4rem;
+}
+
+.nav__icon {
+  color: goldenrod;
+  font-size: 3rem;
+}
+
+.nav__menu {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav__menu a {
+  color: goldenrod;
+  text-decoration: none;
+}
+
+.about {
+  /* background-color: lightgoldenrodyellow; */
+  padding: 0 1rem;
+}
+
+.about__image {
+  border-radius: 50%;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.about__text {
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.about__text p {
+  margin-bottom: 1rem;
+}
+
+.about__text p:first-child::first-letter {
+  font-size: 7.5rem;
+  font-weight: 700;
+  float: left;
+  line-height: 6rem;
+  padding-top: 0.4rem;
+  padding-right: 0.8rem;
+  padding-left: 0.3rem;
+}
+
+.about__text em {
+  font-weight: 600;
+  font-style: italic;
+  color: saddlebrown;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+}
+
+.banner blockquote {
+  display: none;
+}
+
+.skills {
+  background-color: darkkhaki;
+  padding: 2rem;
+}
+
+.contact {
+  background-color: peru;
+  padding: 2rem;
+}
+
+footer {
+  background-color: #2b1805;
+  margin-top: -2rem;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social__links {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+  font-size: 3rem;
+}
+
+.social__links a {
+  color: goldenrod;
+  text-decoration: none;
+}

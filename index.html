@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>There and back again - the Bilbo Baggins portfolio</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link href="./assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="./assets/fontawesome/css/brands.css" rel="stylesheet" />
+    <link href="./assets/fontawesome/css/solid.css" rel="stylesheet" />
+    <link href="./css/reset.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
   </head>
   <body>
     <header>
-      <h1>Bilbo Baggins</h1>
-      <nav>
-        <ul>
+      <h1 class="logo">Bilbo Baggins</h1>
+      <span class="nav__icon"><i class="fa-solid fa-bars"></i></span>
+      <nav class="nav">
+        <ul class="nav__menu">
           <li>Home</li>
           <li><a href="./index.html#about">About</a></li>
           <li><a href="./index.html#skills">Skills</a></li>
@@ -21,26 +26,47 @@
     </header>
 
     <main>
-      <section>
-        <!-- ABOUT -->
+      <section id="about" class="about">
+        <img class="about__image" src="./assets/img/bilbo-profile.jpg" alt="Bilbo Baggins profile picture" />
+        <div class="about__text">
+          <p><strong>Bilbo Baggins</strong> is a Hobbit of <strong>the Shire</strong>, the main protagonist of <em>The Hobbit</em> and a secondary character in <em>The Lord of the Rings</em>.</p>
+          <p>
+            The wizard <strong>Gandalf</strong> suggested to <strong>Thorin Oakenshield</strong> and his Company of Dwarves that they hire Bilbo Baggins to be their burglar in the
+            <em>Quest of Erebor</em>, and they all later fought together in the <em>Battle of the Five Armies</em>.
+          </p>
+          <p>
+            Bilbo was also one of the bearers of <strong>the One Ring</strong>, and the first to voluntarily give it up, although with some difficulty. He wrote many of his adventures in a book he
+            called <em>There and Back Again</em>.
+          </p>
+          <p>Bilbo adopted his second-cousin-once-removed <strong>Frodo Baggins</strong> to be his heir after his parents, Drogo and Primula, died in an accident.</p>
+          <p>He is the first hobbit to become famous in the world at large, and one of the few to set foot in the <em>Undying Lands</em>.</p>
+        </div>
       </section>
-      <aside>
+      <aside class="banner">
         <!-- BANNER -->
       </aside>
-      <section>
+      <section id="skills" class="skills">
         <!-- SKILLS -->
       </section>
-      <section>
+      <section id="contact" class="contact">
         <!-- FORM -->
       </section>
     </main>
 
     <footer>
-      <ul>
-        <li><a href="">Facebook</a></li>
-        <li><a href="">Twitter/X</a></li>
-        <li><a href="">Instagram</a></li>
-        <li><a href="">Youtube</a></li>
+      <ul class="social__links">
+        <li>
+          <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="#" target="_blank"> <i class="fa-brands fa-square-twitter"></i></a>
+        </li>
+        <li>
+          <a href="http://" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="http://" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </li>
       </ul>
     </footer>
   </body>
