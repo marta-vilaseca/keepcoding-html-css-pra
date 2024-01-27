@@ -4,37 +4,165 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>There and back again - the Bilbo Baggins portfolio</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link href="./assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="./assets/fontawesome/css/brands.css" rel="stylesheet" />
+    <link href="./assets/fontawesome/css/solid.css" rel="stylesheet" />
+    <link href="./css/reset.css" rel="stylesheet" />
+    <link href="./css/common.css" rel="stylesheet" />
+    <link href="./css/header.css" rel="stylesheet" />
+    <link href="./css/video.css" rel="stylesheet" />
+    <link href="./css/projects.css" rel="stylesheet" />
+    <link href="./css/footer.css" rel="stylesheet" />
   </head>
   <body>
     <header>
-      <h1>Bilbo Baggins</h1>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./index.html#about">About</a></li>
-          <li><a href="./index.html#skills">Skills</a></li>
-          <li><a href="./index.html#contact">Contact</a></li>
-          <li>Projects</li>
-        </ul>
-      </nav>
+      <h1 class="logo"><a href="#home">Bilbo Baggins</a></h1>
+      <div id="menuToggle">
+        <input type="checkbox" />
+        <span class="nav__icon">
+          <!-- <i class="fa-solid fa-bars"></i> -->
+        </span>
+        <nav class="nav">
+          <ul class="nav__menu">
+            <li><a href="./index.html#about">About</a></li>
+            <li><a href="./index.html#skills">Skills</a></li>
+            <li><a href="./index.html#contact">Contact</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <aside>
-        <!-- VIDEO -->
+    <main id="projects_page">
+      <aside id="video" class="video">
+        <video src="https://www.martavilaseca.com/temp/trailer-1080.mp4" muted autoplay loop>
+          <source src="https://www.martavilaseca.com/temp/trailer-1080.mp4" type="video/mp4" />
+        </video>
       </aside>
-      <section>
-        <!-- PROJECT GRID -->
+      <section id="projects" class="projects">
+        <h2>My projects</h2>
+        <ul class="projects__grid">
+          <li>
+            <figure class="project__details">
+              <img class="project__image" src="./assets/img/projects/The_Hobbit_2016-facsimile.jpeg" alt="The Hobbit (there and back again) cover" />
+              <figcaption class="project__name">
+                <h3>The Hobbit (There and Back Again)</h3>
+                <p>1937</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="project__details">
+              <img class="project__image" src="./assets/img/projects/lotr.jpg" alt="Lord of the Rings book set (first edition)" />
+              <figcaption class="project__name">
+                <h3>The Lord of the Rings</h3>
+                <p>1954-1955</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="project__details">
+              <img class="project__image" src="./assets/img/projects/The_Hobbit_(1966_film)_-_Title_card.png" alt="The Hobbit (1966) title card" />
+              <figcaption class="project__name">
+                <h3>The Hobbit (animated film)</h3>
+                <p>1966</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="project__details">
+              <img class="project__image" src="./assets/img/projects/The_Hobbit_(1977_film)_-_Cover.jpg" alt="The Hobbit (1977) film poster" />
+              <figcaption class="project__name">
+                <h3>The Hobbit (animated film)</h3>
+                <p>1977</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="project__details">
+              <img class="project__image" src="./assets/img/projects/The_Lord_of_the_Rings_(1978_film)_-_poster.jpg" alt="The Lord of the Rings (1978) film poster" />
+              <figcaption class="project__name">
+                <h3>The Lord of the Rings (animated film)</h3>
+                <p>1978</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="project__details">
+              <img class="project__image" src="./assets/img/projects/The_Return_of_the_King_(1980_film)_-_cover.png" alt="The Return of the King (1980) film poster" />
+              <figcaption class="project__name">
+                <h3>The Return of the King (animated film)</h3>
+                <p>1980</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="project__details">
+              <img
+                class="project__image"
+                src="./assets/img/projects/The_Lord_of_the_Rings_-_The_Fellowship_of_the_Ring_-_Ensemble_poster.jpg"
+                alt="LOTR: the Fellowship of the Ring (2001) film poster"
+              />
+              <figcaption class="project__name">
+                <h3>The Lord of the Rings: the Fellowship of the Ring (film)</h3>
+                <p>2001</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="project__details">
+              <img class="project__image" src="./assets/img/projects/LOTR_ReturnOfTheKing.jpg" alt="LOTR: the Return of the King (2003) film poster" />
+              <figcaption class="project__name">
+                <h3>The Lord of the Rings: the Return of the King (film)</h3>
+                <p>2003</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="project__details">
+              <img class="project__image" src="./assets/img/projects/The_Hobbit_-_An_Unexpected_Journey_-_poster_3.jpg" alt="The Hobbit: an Unexpected Journey (2012) film poster" />
+              <figcaption class="project__name">
+                <h3>The Hobbit: an Unexpected Journey (film)</h3>
+                <p>2012</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="project__details">
+              <img class="project__image" src="./assets/img/projects/The_Hobbit_-_The_Desolation_of_Smaug_-_poster_2.jpg" alt="The Hobbit: the Desolation of Smaug (2013) film poster" />
+              <figcaption class="project__name">
+                <h3>The Hobbit: the Desolation of Smaug (film)</h3>
+                <p>2013</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="project__details">
+              <img class="project__image" src="./assets/img/projects/The_Hobbit_-_The_Battle_of_the_Five_Armies_-_Poster2.jpg" alt="The Hobbit: the Battle of the Five Armies (2014) film poster" />
+              <figcaption class="project__name">
+                <h3>The Hobbit: the Battle of the Five Armies (film)</h3>
+                <p>2014</p>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
       </section>
     </main>
 
     <footer>
-      <ul>
-        <li><a href="">Facebook</a></li>
-        <li><a href="">Twitter/X</a></li>
-        <li><a href="">Instagram</a></li>
-        <li><a href="">Youtube</a></li>
+      <ul class="social__links">
+        <li>
+          <a href="https://www.facebook.com/Hobbitontours" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/hobbitontours" target="_blank"> <i class="fa-brands fa-square-twitter"></i></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/hobbitontours" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/thehobbit" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </li>
       </ul>
     </footer>
   </body>

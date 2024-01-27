@@ -1,0 +1,59 @@
+.projects {
+  width: 100%;
+  padding: 0 2rem 2rem;
+}
+
+.projects h2 {
+  margin: 0;
+  color: saddlebrown;
+}
+
+.projects h2::before,
+.projects h2::after {
+  color: #c58659;
+}
+
+.projects__grid {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.project__details {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.project__image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: rgba(255, 250, 250, 0.5); /* Adjust based on your preference */
+}
+
+.project__name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.project__name h3 {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.project__name p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+  font-style: italic;
+  color: saddlebrown;
+}
