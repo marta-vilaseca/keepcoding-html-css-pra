@@ -35,10 +35,9 @@
 }
 
 .project__name {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
   padding: 1rem;
+  align-self: stretch;
 }
 
 .project__name h3 {
@@ -56,4 +55,24 @@
   font-weight: 700;
   font-style: italic;
   color: saddlebrown;
+}
+
+@media (width > 768px) {
+  .projects__grid {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (width > 1200px) {
+  .projects__grid {
+    max-width: 1500px;
+    margin: auto;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
 }

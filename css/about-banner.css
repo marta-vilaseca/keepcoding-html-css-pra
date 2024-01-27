@@ -9,8 +9,6 @@
   border-radius: 50%;
   max-width: 70%;
   margin: 0 auto;
-  /* padding: 1rem;
-    border: 5px solid saddlebrown; */
   margin: 0 auto 2rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
@@ -49,4 +47,37 @@
 
 .banner blockquote {
   display: none;
+}
+
+@media (width > 768px) {
+  .about {
+    padding: 10rem 2rem 4rem;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
+  }
+  .about__image {
+    border-radius: 0;
+    max-width: 100%;
+    border: 1rem solid rgba(255, 250, 250, 0.7);
+    transform: rotate(3deg);
+  }
+  .about__text {
+    max-width: 60%;
+  }
+
+  .about__text p:first-child {
+    font-size: 120%;
+    line-height: 3rem;
+    color: saddlebrown;
+    margin: auto auto 2rem 2rem;
+  }
+
+  .about__text p:first-child::first-letter {
+    font-size: 8.5rem;
+    line-height: 8rem;
+    padding-top: 0.4rem;
+    padding-right: 0.8rem;
+    padding-left: 0.3rem;
+  }
 }

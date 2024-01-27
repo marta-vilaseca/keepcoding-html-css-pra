@@ -20,9 +20,7 @@
       <h1 class="logo"><a href="#home">Bilbo Baggins</a></h1>
       <div id="menuToggle">
         <input type="checkbox" />
-        <span class="nav__icon">
-          <!-- <i class="fa-solid fa-bars"></i> -->
-        </span>
+        <span class="nav__icon"></span>
         <nav class="nav">
           <ul class="nav__menu">
             <li><a href="./index.html#about">About</a></li>
@@ -36,7 +34,11 @@
 
     <main id="home">
       <section id="about" class="about">
-        <img class="about__image" src="./assets/img/bilbo-profile.jpg" alt="Bilbo Baggins profile picture" />
+        <picture>
+          <source srcset="./assets/img/bilbo-profile.jpg" media="(width < 768px)" />
+          <img class="about__image" src="./assets/img/bilbo-profile-full.jpg" alt="Bilbo Baggins profile picture" />
+        </picture>
+
         <div class="about__text">
           <p>
             My name is <strong>Bilbo Baggins</strong> and I'm a Hobbit of <strong>the Shire</strong>. You may know me from my adventures as featured on <em>The Hobbit</em>, or also from my brief but

@@ -140,3 +140,19 @@ textarea:-moz-placeholder {
 .contact h2::after {
   color: #c58659;
 }
+
+@media (width > 768px) {
+  .contact {
+    padding: 4rem 2rem;
+  }
+  form {
+    max-width: 800px;
+    margin: auto;
+  }
+  .form__buttons {
+    justify-content: center;
+  }
+  .form__buttons input {
+    max-width: 250px;
+  }
+}

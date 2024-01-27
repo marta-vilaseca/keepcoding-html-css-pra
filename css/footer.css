@@ -10,11 +10,22 @@ footer {
 .social__links {
   list-style-type: none;
   display: flex;
-  gap: 2rem;
+  align-items: center;
+  gap: 2.5rem;
   font-size: 3rem;
 }
 
 .social__links a {
   color: goldenrod;
   text-decoration: none;
+}
+
+@media (hover: hover) {
+  .social__links a {
+    transition: all 0.5s ease;
+  }
+  .social__links a:hover {
+    color: AntiqueWhite;
+    font-size: 3.2rem;
+  }
 }

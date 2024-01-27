@@ -40,10 +40,6 @@ header {
   content: "\f0c9";
 }
 
-/* header .fa-solid {
-  font-size: 3rem;
-} */
-
 .menu_icon,
 .menu-close-icon {
   color: goldenrod;
@@ -125,5 +121,63 @@ header {
   }
   to {
     content: "\f00d";
+  }
+}
+
+@media (width > 768px) {
+  #menuToggle input,
+  .nav__icon {
+    display: none;
+  }
+  .nav {
+    display: block;
+  }
+
+  .nav ul {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .nav li {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .nav a {
+    display: inline-block;
+    padding: 0 1.5rem;
+    height: 3rem;
+    line-height: 3rem;
+  }
+
+  .logo {
+    background: none;
+    padding-left: 12rem;
+    position: relative;
+    font-size: 2.4rem;
+  }
+
+  .logo::before {
+    content: "";
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    background: #2b1805 url("../assets/img/hobbit-door.png") center center no-repeat;
+    background-size: 8rem;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
+@media (hover: hover) {
+  .nav a {
+    transition: all 0.5s ease;
+  }
+  .nav a:hover {
+    color: AntiqueWhite;
+    font-size: 1.7rem;
+    background: black;
+    border-radius: 1rem;
   }
 }

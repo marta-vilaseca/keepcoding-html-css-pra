@@ -15,3 +15,11 @@
     opacity: 1;
   }
 }
+
+@media (width > 1200px) {
+  .video {
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+  }
+}
