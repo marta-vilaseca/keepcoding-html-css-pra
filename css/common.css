@@ -1,7 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  accent-color: saddlebrown;
+  --text-color: #160d03;
+  --header-footer-bg: #2b1805;
+  --accent-primary: #daa520;
+  --accent-secondary: #8b4513;
+  --light: #faebd7;
+  --light-accents: #c58659;
+  --form-inputs: rgba(205, 133, 63, 0.5);
+  --skills-bg: #b8bd6b;
+  --skills-texts: #404030;
+  --skills-accents: #91973c;
 }
 
 html {
@@ -14,12 +23,12 @@ body {
   flex-direction: column;
   gap: 2rem;
   font-family: "Merriweather", serif;
-  background: url("../assets/img/1.jpg") top center repeat scroll;
+  background: url("../assets/img/bg.jpg") top center repeat scroll;
 }
 
 body,
 html {
-  scroll-padding-top: 6rem; /* adjust the pixel amount here for your top navigation bar height */
+  scroll-padding-top: 7rem; /* adjust the pixel amount here for your top navigation bar height */
 }
 
 h2 {

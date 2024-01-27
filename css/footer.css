@@ -1,10 +1,23 @@
 footer {
-  background-color: #2b1805;
+  position: relative;
+  background-color: var(--header-footer-bg);
   margin-top: -2rem;
   height: 7rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-left: 2rem;
+}
+
+.scrollToTop {
+  display: block;
+  position: absolute;
+  right: 2rem;
+  background: var(--text-color) url("../assets/img/mountain.png") center center no-repeat;
+  background-size: 3.8rem;
+  border-radius: 50%;
+  width: 5.6rem;
+  height: 5.6rem;
 }
 
 .social__links {
@@ -16,8 +29,25 @@ footer {
 }
 
 .social__links a {
-  color: goldenrod;
+  color: var(--accent-primary);
   text-decoration: none;
+}
+
+@media (width > 768px) {
+  footer {
+    justify-content: center;
+    padding-left: 0;
+  }
+  .scrollToTop {
+    top: -4rem;
+    right: 2rem;
+    background: var(--header-footer-bg) url("../assets/img/mountain.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 8rem;
+    width: 10rem;
+    height: 10rem;
+  }
 }
 
 @media (hover: hover) {
@@ -25,7 +55,28 @@ footer {
     transition: all 0.5s ease;
   }
   .social__links a:hover {
-    color: AntiqueWhite;
+    color: var(--light);
     font-size: 3.2rem;
+  }
+  .scrollToTop:hover {
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    background-position: center center;
+  }
+  20%,
+  60% {
+    background-position: center 0.5rem;
+  }
+  40%,
+  80% {
+    background-position: center 1.25rem;
   }
 }

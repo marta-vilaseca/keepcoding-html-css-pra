@@ -1,16 +1,17 @@
 .projects {
   width: 100%;
-  padding: 0 2rem 2rem;
+  padding: 0 2rem 4rem;
+  position: relative;
 }
 
 .projects h2 {
   margin: 0;
-  color: saddlebrown;
+  color: var(--accent-secondary);
 }
 
 .projects h2::before,
 .projects h2::after {
-  color: #c58659;
+  color: var(--light-accents);
 }
 
 .projects__grid {
@@ -31,7 +32,7 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  background-color: rgba(255, 250, 250, 0.5); /* Adjust based on your preference */
+  background-color: rgba(250, 235, 215, 0.5); /* Adjust based on your preference */
 }
 
 .project__name {
@@ -54,7 +55,7 @@
   line-height: 2.4rem;
   font-weight: 700;
   font-style: italic;
-  color: saddlebrown;
+  color: var(--accent-secondary);
 }
 
 @media (width > 768px) {
@@ -70,9 +71,6 @@
   .projects__grid {
     max-width: 1500px;
     margin: auto;
-    list-style-type: none;
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
   }
 }

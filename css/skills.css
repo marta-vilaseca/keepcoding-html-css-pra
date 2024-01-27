@@ -1,5 +1,5 @@
 .skills {
-  background-color: #b8bd6b;
+  background-color: var(--skills-bg);
   background: linear-gradient(180deg, rgba(156, 161, 81, 1) 0, rgba(184, 189, 107, 1) 1.5rem);
   padding: 3rem 2rem;
   font-size: 1.3rem;
@@ -7,12 +7,12 @@
 }
 
 .skills h2 {
-  color: #404030;
+  color: var(--skills-texts);
 }
 
 .skills h2::before,
 .skills h2::after {
-  color: #91973c;
+  color: var(--skills-accents);
 }
 
 .skills ul {
@@ -34,15 +34,14 @@
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  color: #404030;
+  color: var(--skills-texts);
 }
 
 .skills__container {
   width: 60%;
   height: 1.8rem;
-  /* border-left: 4px solid #908b42; */
   position: relative;
-  background-color: #91973c;
+  background-color: var(--skills-accents);
   border-radius: 7px;
 }
 
@@ -51,7 +50,7 @@
   position: absolute;
   top: 0.4rem;
   left: 0.4rem;
-  background-color: AntiqueWhite;
+  background-color: var(--light);
   height: 1rem;
   border-radius: 6px;
 }
@@ -104,5 +103,12 @@
   }
   .skills__label {
     width: 50%;
+  }
+}
+
+@media (width > 1200px) {
+  .skills ul {
+    max-width: 1400px;
+    margin: auto;
   }
 }

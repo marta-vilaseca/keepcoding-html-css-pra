@@ -1,10 +1,10 @@
 header {
-  background-color: #2b1805;
+  background-color: var(--header-footer-bg);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: goldenrod;
-  padding: 1rem 2rem;
+  color: var(--accent-primary);
+  padding: 1.5rem 2rem;
   position: fixed;
   width: 100%;
   z-index: 10;
@@ -17,17 +17,28 @@ header {
 }
 
 .logo {
-  background: url("../assets/img/hobbit-door.png") center left no-repeat;
-  background-size: contain;
-  height: 4rem;
-  padding-left: 5rem;
+  position: relative;
+  height: 5rem;
+  padding-left: 6rem;
   font-size: 2rem;
-  line-height: 4rem;
+  line-height: 5rem;
+}
+
+.logo::before {
+  content: "";
+  position: absolute;
+  top: -0.5rem;
+  left: -1rem;
+  background: var(--text-color) url("../assets/img/hobbit-door.png") center center no-repeat;
+  background-size: 4rem;
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
 }
 
 .logo a:link,
 .logo a:visited {
-  color: goldenrod;
+  color: var(--accent-primary);
   text-decoration: none;
 }
 
@@ -42,7 +53,7 @@ header {
 
 .menu_icon,
 .menu-close-icon {
-  color: goldenrod;
+  color: var(--accent-primary);
 }
 
 .fa-xmark {
@@ -56,13 +67,13 @@ header {
 }
 
 .nav__menu a {
-  color: goldenrod;
+  color: var(--accent-primary);
   text-decoration: none;
   display: block;
 }
 
 .nav__menu a:active {
-  background-color: black;
+  background-color: var(--text-color);
 }
 
 #menuToggle input {
@@ -77,9 +88,9 @@ header {
 #menuToggle input:checked ~ .nav {
   display: block;
   position: absolute;
-  top: 6rem;
+  top: 7rem;
   right: 0;
-  background-color: #2b1805;
+  background-color: var(--header-footer-bg);
   animation-name: showMenu;
   animation-duration: 0.3s;
   transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -97,7 +108,7 @@ header {
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
-  border-top: 1px solid saddlebrown;
+  border-top: 1px solid var(--accent-secondary);
 }
 
 #menuToggle input:checked ~ .nav__icon::after {
@@ -139,32 +150,28 @@ header {
   }
 
   .nav li {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
   }
 
   .nav a {
     display: inline-block;
     padding: 0 1.5rem;
-    height: 3rem;
-    line-height: 3rem;
+    height: 4rem;
+    line-height: 4rem;
   }
 
   .logo {
-    background: none;
     padding-left: 12rem;
-    position: relative;
     font-size: 2.4rem;
   }
 
   .logo::before {
-    content: "";
-    position: absolute;
-    top: -1rem;
     left: 0;
-    background: #2b1805 url("../assets/img/hobbit-door.png") center center no-repeat;
+    background: var(--header-footer-bg) url("../assets/img/hobbit-door.png") center center no-repeat;
     background-size: 8rem;
-    border-radius: 50%;
     width: 10rem;
     height: 10rem;
   }
@@ -172,12 +179,12 @@ header {
 
 @media (hover: hover) {
   .nav a {
-    transition: all 0.5s ease;
+    transition: all 0.5s ease-in;
+    background-color: var(--header-footer-bg);
   }
   .nav a:hover {
-    color: AntiqueWhite;
-    font-size: 1.7rem;
-    background: black;
+    color: var(--light);
+    background-color: var(--text-color);
     border-radius: 1rem;
   }
 }
