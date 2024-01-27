@@ -1,0 +1,120 @@
+body {
+  background-image: linear-gradient(360deg, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0) 40%), url("../assets/img/404-mirkwood.png");
+  background-position: top center, center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #daa520;
+  display: flex;
+  flex-direction: column;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2rem;
+  height: 35dvh;
+}
+
+h1 {
+  font-size: 20dvh;
+  line-height: 20dvh;
+}
+
+h3 {
+  font-size: 2rem;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+main {
+  height: auto;
+  flex-grow: 1;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+section {
+  color: #daa520;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+p {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+a:link,
+a:visited {
+  display: block;
+  width: 7rem;
+  height: 7rem;
+  /* border: 1px solid goldenrod; */
+  background: goldenrod url("../assets/img/hobbit-home-alt.png") center 0.8rem no-repeat;
+  background-size: 4.8rem;
+  border-radius: 50%;
+  text-indent: -9999px;
+}
+
+@media (width > 768px) {
+  main {
+    padding-bottom: 6rem;
+  }
+
+  p {
+    max-width: 40ch;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 3.5rem;
+  }
+}
+
+@media (width > 900px) {
+  p {
+    font-size: 2.5rem;
+    line-height: 4rem;
+  }
+}
+
+@media (hover: hover) {
+  a {
+    transition: all 0.5s ease;
+  }
+  a:hover {
+    animation-name: beat;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+  }
+}
+
+@keyframes beat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  20%,
+  60% {
+    transform: scale(1.1);
+  }
+  40%,
+  80% {
+    transform: scale(0.9);
+  }
+}
