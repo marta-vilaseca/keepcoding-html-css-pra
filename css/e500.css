@@ -51,7 +51,7 @@ a:visited {
   text-indent: -9999px;
 }
 
-@media (width > 768px) {
+@media (min-width: 768px) {
   p {
     max-width: 90%;
   }

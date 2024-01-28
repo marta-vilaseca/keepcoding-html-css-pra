@@ -33,7 +33,7 @@ footer {
   text-decoration: none;
 }
 
-@media (width > 768px) {
+@media (min-width: 768px) {
   footer {
     justify-content: center;
     padding-left: 0;

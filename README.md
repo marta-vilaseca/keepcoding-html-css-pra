@@ -8,6 +8,12 @@
 
 Para la práctica he decidido crear un portfolio de uno de mis personajes ficticios favoritos, **Bilbo Baggins** (_Bilbo Bolsón_ en la traducción española) de los libros y películas de _El Hobbit_ y _El Señor de los Anillos_.
 
+| Versión mobile                                                                                                            | Versión Desktop                                                                                                    |
+| ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| ![Mobile screenshot](https://github.com/marta-vilaseca/keepcoding-html-css-pra/raw/main/assets/img/screenshot-mobile.jpg) | ![Mobile screenshot](https://github.com/marta-vilaseca/keepcoding-html-css-pra/raw/main/assets/img/screenshot.jpg) |
+
+Página desplegada en github pages aquí: [https://marta-vilaseca.github.io/keepcoding-html-css-pra/](https://marta-vilaseca.github.io/keepcoding-html-css-pra/)
+
 ### ✅ Requisitos obligatorios
 
 - Siguiendo las indicaciones recibidas, **no se ha utilizado Javascript ni librerías CSS externas en toda la práctica**

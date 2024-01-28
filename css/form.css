@@ -118,7 +118,8 @@ fieldset.form__element label {
   font-weight: bold;
 }
 
-/* https://community.gravityforms.com/t/remove-placeholder-text-when-the-field-is-clicked-resolved/12016 */
+/* Hide placeholders when input or textarea are clicked
+https://community.gravityforms.com/t/remove-placeholder-text-when-the-field-is-clicked-resolved/12016 */
 input:focus::-webkit-input-placeholder,
 textarea:focus::-webkit-input-placeholder {
   color: transparent;
@@ -144,7 +145,7 @@ textarea:-moz-placeholder {
   color: var(--light-accents);
 }
 
-@media (width > 768px) {
+@media (min-width: 768px) {
   .contact {
     padding: 4rem 2rem;
   }
@@ -160,7 +161,7 @@ textarea:-moz-placeholder {
   }
 }
 
-@media (width > 1200px) {
+@media (min-width: 1200px) {
   .contact {
     padding: 4rem 4rem 6rem;
   }

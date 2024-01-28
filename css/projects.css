@@ -24,8 +24,9 @@
 .project__details {
   height: 100%;
   display: grid;
-  grid-template-rows: auto;
-  grid-auto-rows: minmax(5rem, 10rem);
+  /* grid-template-rows: auto;
+  grid-auto-rows: maxcontent; */
+  /* grid-auto-rows: minmax(5rem, 10rem); */
 }
 
 .project__image {
@@ -57,7 +58,7 @@
   color: var(--accent-secondary);
 }
 
-@media (width > 768px) {
+@media (min-width: 768px) {
   .projects__grid {
     list-style-type: none;
     display: grid;
@@ -72,7 +73,7 @@
   }
 }
 
-@media (width > 1200px) {
+@media (min-width: 1200px) {
   .projects__grid {
     max-width: 1500px;
     margin: auto;

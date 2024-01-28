@@ -46,7 +46,7 @@
   color: var(--accent-secondary);
 }
 
-@media (width > 768px) {
+@media (min-width: 768px) {
   .about {
     background: none;
     padding: 12rem 2rem 4rem;
@@ -80,7 +80,7 @@
   }
 }
 
-@media (width > 1200px) {
+@media (min-width: 1200px) {
   .about {
     max-width: 1500px;
     margin: auto;

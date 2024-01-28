@@ -30,7 +30,7 @@ body {
 
 body,
 html {
-  scroll-padding-top: 7rem; /* adjust the pixel amount here for your top navigation bar height */
+  scroll-padding-top: 7rem; /* adjust the pixel amount here for top navigation bar height */
 }
 
 h2 {

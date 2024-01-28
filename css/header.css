@@ -135,7 +135,7 @@ header {
   }
 }
 
-@media (width > 768px) {
+@media (min-width: 768px) {
   #menuToggle input,
   .nav__icon {
     display: none;

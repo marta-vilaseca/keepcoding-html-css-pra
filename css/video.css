@@ -16,7 +16,7 @@
   }
 }
 
-@media (width > 1200px) {
+@media (min-width: 1200px) {
   .video {
     background-color: var(--text-color);
     display: flex;
