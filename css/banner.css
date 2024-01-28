@@ -1,0 +1,72 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: url("../assets/img/hobbiton-day-alt.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  aspect-ratio: 15 / 7;
+}
+
+blockquote {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    background: url("../assets/img/hobbiton-day-alt_768.jpg");
+    aspect-ratio: 2.2 / 1;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 520px) {
+  .banner {
+    background: url("../assets/img/hobbiton-day-alt_520.jpg");
+    aspect-ratio: 10 / 7;
+    background-size: 100%;
+  }
+}
+
+@media (min-width: 640px) {
+  blockquote {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 2rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--quote);
+    text-shadow: 3px 2px 2px var(--light);
+    display: flex;
+    justify-content: flex-end;
+    max-width: 25ch;
+  }
+}
+
+@media (min-width: 900px) {
+  blockquote {
+    font-size: 2.5rem;
+    line-height: 3.6rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .banner {
+    background: url("../assets/img/hobbiton-day-alt_hq.jpg");
+    aspect-ratio: 12 / 5;
+    max-height: 70rem;
+    background-size: 100%;
+    background-position: top center;
+  }
+  blockquote {
+    max-width: 40ch;
+    font-size: 3rem;
+    line-height: 5rem;
+  }
+}

@@ -173,3 +173,12 @@ textarea:-moz-placeholder {
     min-height: 10.5rem;
   }
 }
+
+@media (hover: hover) {
+  .form__buttons input {
+    transition: all 0.2s ease;
+  }
+  .form__buttons input:hover {
+    transform: scale(105%);
+  }
+}

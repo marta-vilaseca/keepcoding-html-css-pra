@@ -46,11 +46,6 @@
   color: var(--accent-secondary);
 }
 
-.banner img {
-  width: 100%;
-  height: auto;
-}
-
 @media (width > 768px) {
   .about {
     background: none;
@@ -100,17 +95,6 @@
   .about__text p:first-child,
   .about__text p {
     margin: auto;
-  }
-  .banner {
-    max-height: 70rem;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .banner img {
-    height: 100%;
-    object-fit: cover;
   }
 }
 
